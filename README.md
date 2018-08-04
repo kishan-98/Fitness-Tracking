@@ -1,12 +1,21 @@
 # Heart Rate Monitoring during exercise
 
+## Prerequisite
+
+The system should be Linux-based architecture and has MATLAB installed and accessible from the terminal.
+
+*Usage*
+```
+Run ./fitness_filter.sh <path_to_train> <path_to_test> <path_to_save>
+```
+
 ## Overview
 
 Photoplethysmography(PPG) is a popular method for heart rate (HR) monitoring which allows monitoring at the peripheral positions such as earlobes, fingertips or wrists. PPG sensors which are embedded in these wearable devices emit light to the skin and measure the changes of intensity of the light. The periodicity of these measurements corresponds to the cardiac rhythm, and thus, HR can be estimated from the PPG signal. PPG signal thus obtained has motional artefacts which corresponds to the noise. Using the inverse filtering and noise smoothing techniques like wiener filtering followed by linear regression for curve fitting.
 
 ## Databases
 
-During data recording of around 5 minutes, each subject ran on a treadmill with changing speeds varying from 0-8-15-8-15-0 or 0-6-12-6-12-0 (in kmph). Its PPG, Accelerometer and ECG signals were simultaneously sampled at 125 Hz.
+During data recording of around 5 minutes, each subject ran on a treadmill with changing speeds varying from 0-8-15-8-15-0 or 0-6-12-6-12-0 (in kmph). Its PPG, Accelerometer and ECG signals were simultaneously sampled at 125 Hz. The test data sets are in the folder 'Test Data'
 
 ## Data Standards
 
